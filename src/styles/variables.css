@@ -1,0 +1,99 @@
+/* === Design Tokens — Swiss Minimalism + Deep Navy & Scan Blue === */
+
+:root {
+  /* Colors */
+  --color-bg: #F8FAFC;
+  --color-white: #FFFFFF;
+  --color-preview-bg: #F1F2F3;
+
+  /* Text */
+  --color-text-primary: #0F172A;
+  --color-text-heading: #1E293B;
+  --color-text-body: #334155;
+  --color-text-secondary: #64748B;
+  --color-text-muted: #94A3B8;
+  --color-text-description: #475569;
+
+  /* Accent */
+  --color-primary: #2563EB;
+  --color-primary-light: #EFF6FF;
+  --color-export-btn: #1E293B;
+
+  /* Borders */
+  --color-border: #E4E5E7;
+  --color-border-light: #E2E8F0;
+
+  /* States */
+  --color-delete-bg: #FEF2F2;
+  --color-delete-text: #DC2626;
+  --color-ai-bg: #F0FDF4;
+  --color-ai-text: #166534;
+  --color-input-bg: #F8FAFC;
+
+  /* Font */
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* Shadows */
+  --shadow-preview: 0 2px 16px rgba(0, 0, 0, 0.08);
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+
+  /* Transitions */
+  --transition: 150ms ease;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #app {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: var(--color-text-body);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  background: none;
+  transition: opacity var(--transition);
+}
+button:hover { opacity: 0.85; }
+button:active { opacity: 0.7; }
+
+input, textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: var(--color-text-body);
+  width: 100%;
+  background: transparent;
+}
+input::placeholder, textarea::placeholder {
+  color: var(--color-text-muted);
+}
